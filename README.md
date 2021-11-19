@@ -12,6 +12,10 @@ Test: "It will return 'Beep!' when the number 1 is entered."
 Code: helloNeighbor(1)
 Expected Output: "Beep!"
 
+Test: "It will return all other numbers as itself"
+Code: helloNeighbor (5)
+Expected Output: 5
+
 Test: 
 Code: 
 Expected Output: 
