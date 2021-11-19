@@ -27,16 +27,28 @@ function helloNeighbor(number){
 
 
 //User Interface
-$(document).ready(function(){
-
+$(document).ready(function() {
   $('#lang1').hide();
   $('#lang2').hide();
   $('#lang3').hide();
-  $("form#add").submit(function(event) {
-    const num1 = parseInt($("#add1").val());
-    const result = num1;
-    $("#result").text(result);
-    $("#add").trigger("reset");
-    event.preventDefault();
+
+  $("#entry").submit(function(event) {
+    event.preventDefault()
+    const quest1 = parseInt($("#add1").val());
+    let entryCode = quest1
+
+   if (entryCode === 3) {
+      $('#lang1').show();
+    } else if (entryCode === 2) {
+      $('#lang2').show();
+    } else if (entryCode === 1) {
+      $('#lang3').show();
+    }  
   });
-});
+  
+  $("#tryagain").click(function() {
+    $('#lang1').hide("");
+    $('#lang2').hide("");
+    $('#lang3').hide("");
+    });
+}); 
