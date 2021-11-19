@@ -29,7 +29,9 @@ function helloNeighbor(number){
 //User Interface
 
 $(document).ready(function(){
- 
+    $('#lang1').hide();
+    $('#lang2').hide();
+    $('#lang3').hide();
     $("form#add").submit(function(event) {
       const num1 = parseInt($("#add1").val());
       const result = num1;
