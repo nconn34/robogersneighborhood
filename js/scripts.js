@@ -1,3 +1,5 @@
+//Business Interface
+
 function helloNeighbor(number){
   const hello3 = "Won't you be my neighbor?";
   const hello2 = "Boop!"
@@ -18,3 +20,16 @@ function helloNeighbor(number){
       return roboger
   }
 };
+
+//User Interface
+
+$(document).ready(function(){
+ 
+    $("form#add").submit(function(event) {
+      const num1 = parseInt($("#add1").val());
+      const result = num1;
+      $("#result").text(result);
+      $("#add").trigger("reset");
+      event.preventDefault();
+    });
+});
