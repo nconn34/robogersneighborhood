@@ -72,7 +72,31 @@ function helloNeighbor(number){
   roboger = hello0;
   console.log("howdy");
   return roboger
-}
+} else if (output.includes(4)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} else if (output.includes(5)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} else if (output.includes(6)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} else if (output.includes(7)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} else if (output.includes(8)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} else if (output.includes(9)){
+  roboger = hello0;
+  console.log("howdy");
+  return roboger
+} 
 };
 
 
