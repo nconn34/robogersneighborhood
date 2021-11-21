@@ -24,6 +24,30 @@ Test: "It will identify 3 when one is present in the array"
 Code: output.includes(3)
 Expected Output: True
 
+Test: "It will identify 2 when one is present in the array"
+Code: output.includes(2)
+Expected Output: True
+
+Test: "It will identify 1 when one is present in the array"
+Code: output.includes(1)
+Expected Output: True
+
+Test: "It will return the prompt when a 3 is present in the array"
+Code: helloNeighbor(3)
+Expected Output: "Won't you be my neighbor?"
+
+Test: "It will return the prompt when a 2 is present in the array"
+Code: helloNeighbor(2)
+Expected Output: "Boop!"
+
+Test: "It will return the prompt when a 1 is present in the array"
+Code: helloNeighbor(1)
+Expected Output: "Beep!"
+
+Test: "It will return the prompt when a 3 is present in any order in the array"
+Code: helloNeighbor(23)
+Expected Output: "Won't you be my neighbor?"
+
 Test: 
 Code: 
 Expected Output: 
