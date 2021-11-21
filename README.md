@@ -16,6 +16,10 @@ Test: "It will return all other numbers as itself"
 Code: helloNeighbor (5)
 Expected Output: 5
 
+Test: "It will take a number as a string and slice each number to a single digit to store in an empty array"
+Code: const number = 123456789; output = []; robogerNum = number.toString;
+Expected Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 Test: 
 Code: 
 Expected Output: 
