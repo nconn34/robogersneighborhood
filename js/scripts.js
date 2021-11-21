@@ -26,7 +26,30 @@ function helloNeighbor(number){
 };
 
 
+
+
+/* for the fifth test */
+
+const number = 123456789;
+output = [];
+robogerNum = number.toString();
+
+for (let i = 0, length=robogerNum.length; i < length; i += 1){
+  output.push(+robogerNum.charAt(i));
+}
+console.log(output);
+
+
+
 //User Interface
+
+//Consider using UI from text-analyzer
+
+//Look at boldPassage logic for how to look at different parts of the number
+
+//This logic is from the programming language suggester
+
+
 $(document).ready(function() {
   $('#lang1').hide();
   $('#lang2').hide();
