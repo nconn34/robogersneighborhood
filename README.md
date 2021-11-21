@@ -20,6 +20,10 @@ Test: "It will take a number as a string and slice each number to a single digit
 Code: const number = 123456789; output = []; robogerNum = number.toString;
 Expected Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+Test: "It will identify 3 when one is present in the array"
+Code: output.includes(3)
+Expected Output: True
+
 Test: 
 Code: 
 Expected Output: 
