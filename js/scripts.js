@@ -5,7 +5,7 @@ function helloNeighbor(number){
   const hello2 = "Boop!";
   const hello1 = "Beep!";
   const hello0 = "Try again!";
-  output = [];
+  let output = [];
   let robogerNum = number.toString();
   let roboger = "";
   for (let i = 0, length=robogerNum.length; i < length; i += 1){
@@ -13,43 +13,33 @@ function helloNeighbor(number){
 }
   if (output.includes(3)){
     roboger = hello3;
-    console.log("howdy");
     return roboger
   } else if (output.includes(2)){
     roboger = hello2;
-    console.log("howdy");
     return roboger
 } else if (output.includes(1)){
     roboger = hello1;
-    console.log("howdy");
     return roboger
 } else if (output.includes(0)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(4)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(5)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(6)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(7)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(8)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } else if (output.includes(9)){
     roboger = hello0;
-    console.log("howdy");
     return roboger
 } 
 };
@@ -105,35 +95,11 @@ console.log(output.includes(3)) */
 
 //User Interface
 
-//Consider using UI from text-analyzer
-
-//Look at boldPassage logic for how to look at different parts of the number
-
-//This logic is from the programming language suggester
-
-
 $(document).ready(function() {
-  $('#lang1').hide();
-  $('#lang2').hide();
-  $('#lang3').hide();
-
-  $("#entry").submit(function(event) {
+  $("form#entry").submit(function(event){
     event.preventDefault()
-    const quest1 = parseInt($("#add1").val());
-    let entryCode = quest1
-
-   if (entryCode === 3) {
-      $('#lang1').show();
-    } else if (entryCode === 2) {
-      $('#lang2').show();
-    } else if (entryCode === 1) {
-      $('#lang3').show();
-    }  
-  });
-  
-  $("#tryagain").click(function() {
-    $('#lang1').hide("");
-    $('#lang2').hide("");
-    $('#lang3').hide("");
-    });
-}); 
+    const robogerAccess = $("#add1").val();
+    const roboger1 = helloNeighbor(robogerAccess);
+    $("#result").html(roboger1);
+})
+});
