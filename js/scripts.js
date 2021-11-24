@@ -5,44 +5,32 @@ function helloNeighbor(number){
   const hello2 = "Boop!";
   const hello1 = "Beep!";
   const hello0 = "Try again!";
-  let output = [];
+  const output = [];
   let robogerNum = number.toString();
   let roboger = "";
+
+  //Trying to put a loop inside of a loop... here goes 
+  // for (i=0; i<=number; i++)
+    //output.push(i.toString());
   for (let i = 0, length=robogerNum.length; i < length; i += 1){
-  output.push(+robogerNum.charAt(i));
-}
+      output.push(+robogerNum.charAt(i));
+  }
   if (output.includes(3)){
     roboger = hello3;
     return roboger
-  } else if (output.includes(2)){
+} else if (output.includes(2)){
     roboger = hello2;
     return roboger
 } else if (output.includes(1)){
     roboger = hello1;
     return roboger
-} else if (output.includes(0)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(4)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(5)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(6)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(7)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(8)){
-    roboger = hello0;
-    return roboger
-} else if (output.includes(9)){
-    roboger = hello0;
-    return roboger
-} 
-};
+}
+// output.push(i.toString());
+  // return roboger.toString();
+//
+}
+
+
 
 //User Interface
 
@@ -54,3 +42,13 @@ $(document).ready(function() {
     $("#result").html(roboger1);
 })
 });
+
+
+/* Loop for return array of number range
+
+function helloNeighbor(number){
+  const output = [];
+    for (i=0; i<=number; i++){
+      output.push(i.toString());
+    }
+  return output.toString();*/
