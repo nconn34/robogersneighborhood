@@ -93,5 +93,13 @@ Expected Output: "Won't you be my neighbor?"
 
 Describe: howdyRoboger(number)
 Test: "It will return a range of numbers from 0 to the user inputted number."
-Code: helloNeighbor(5)
-Expected Output: 0, "Beep!", "Boop!", "Won't you be my neighbor?" 4, 5
+Code: howdyRoboger(5)
+Expected Output: 0, 1, 2, 3, 4, 5
+
+Test: "It will replace 3 with 'Won't you be my neighbor?'."
+Code: howdyRoboger(5)
+Expected Output: 0, 1, 2, Won't you be my neighbor?, 4, 5
+
+Test: "It will replace 2 with 'Boop!'."
+Code: howdyRoboger(5)
+Expected Output: 0, 1, Boop!, Won't you be my neighbor?, 4, 5
