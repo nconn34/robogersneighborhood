@@ -44,55 +44,6 @@ function helloNeighbor(number){
 } 
 };
 
-// Below is the original function before adding in a for loop and refactoring it
-
-/* function helloNeighbor(number){
-  const hello3 = "Won't you be my neighbor?";
-  const hello2 = "Boop!";
-  const hello1 = "Beep!";
-  const hello0 = number;
-  output = [];
-  let robogerNum = number.toString();
-  let roboger = "";
-  for (let i = 0, length=robogerNum.length; i < length; i += 1){
-    output.push(+robogerNum.charAt(i));
-  }
-  if (number === 3){
-    roboger = hello3;
-    console.log("howdy");
-    return roboger
-  } else if (number === 2){
-      roboger = hello2;
-      console.log("howdy");
-      return roboger
-  } else if (number === 1){
-      roboger = hello1;
-      console.log("howdy");
-      return roboger
-  }/* else if (number === hello0) {
-      roboger = number;
-      console.log("howdy");
-      return roboger
-  }*/
-
-
-
-//  for the fifth test
-
-/* const number = 123456789;
-output = [];
-robogerNum = number.toString();
-
-for (let i = 0, length=robogerNum.length; i < length; i += 1){
-  output.push(+robogerNum.charAt(i));
-}
-console.log(output);
-console.log(output.includes(3)) */
-
-
-
-
-
 //User Interface
 
 $(document).ready(function() {
