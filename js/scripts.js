@@ -9,6 +9,15 @@ function helloNeighbor(number){
   let robogerNum = number.toString();
   let roboger = "";
 
+  /* Loop for return array of number range, not sure where to include in code
+
+function helloNeighbor(number){
+  const output = [];
+    for (i=0; i<=number; i++){
+      output.push(i.toString());
+    }
+  return output.toString();*/
+
   //Trying to put a loop inside of a loop... here goes nothing...
   // I feel like I am close but just not getting the syntax correct...
   //for (i=0; i<=number; i++){
@@ -46,11 +55,4 @@ $(document).ready(function() {
 });
 
 
-/* Loop for return array of number range, not sure where to include in code
 
-function helloNeighbor(number){
-  const output = [];
-    for (i=0; i<=number; i++){
-      output.push(i.toString());
-    }
-  return output.toString();*/
