@@ -102,4 +102,8 @@ Expected Output: 0, 1, 2, Won't you be my neighbor?, 4, 5
 
 Test: "It will replace 2 with 'Boop!'."
 Code: howdyRoboger(5)
-Expected Output: 0, 1, Boop!, Won't you be my neighbor?, 4, 5
+Expected Output: 0, 1, Boop!,3, 4, 5
+
+Test: "It will replace 1 with 'Beep!'."
+Code: howdyRoboger(5)
+Expected Output: 0, Beep!, 2,3, 4, 5
