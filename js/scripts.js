@@ -32,17 +32,20 @@ function howdyRoboger(number){
   for (let i = howdy.length; i > 0; i--){
     output.push(howdy.charAt(i));
   } 
- if (howdy.includes(3)){
-  howdy2= howdy.replaceAll(3, "Won't you be my neighbor?")
+ if (howdy.includes(3) && howdy.includes (2) && howdy.includes(1)){
+  howdy2= howdy.replaceAll(3, "Won't you be my neighbor?") + howdy.replaceAll(2, "Beep!") + howdy.replaceAll(1, "Boop!")
   }
- if (howdy.includes(2)){
+  return howdy2
+ /* if (howdy.includes(2)){
   howdy2=howdy.replaceAll(2, "Boop!")
  }
  if (howdy.includes(1)){
   howdy2 = howdy.replaceAll(1, "Beep!")
  }
- return howdy2
-}
+ return howdy2 */
+ }
+ 
+
 
 
 //User Interface
@@ -51,7 +54,7 @@ $(document).ready(function() {
   $("form#entry").submit(function(event){
     event.preventDefault()
     const robogerAccess = $("#add1").val();
-    const roboger1 = helloNeighbor(robogerAccess);
+    const roboger1 = howdyRoboger(robogerAccess);
     $("#result").html(roboger1);
 })
 });
