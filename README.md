@@ -91,6 +91,7 @@ Test: "It will return the prompt when a 3 is present in any order in the array"
 Code: helloNeighbor(23)
 Expected Output: "Won't you be my neighbor?"
 
+Describe: howdyRoboger(number)
 Test: "It will return a range of numbers from 0 to the user inputted number."
 Code: helloNeighbor(5)
 Expected Output: 0, "Beep!", "Boop!", "Won't you be my neighbor?" 4, 5
