@@ -32,18 +32,19 @@ function howdyRoboger(number){
   for (let i = howdy.length; i > 0; i--){
     output.push(howdy.charAt(i));
   } 
- if (howdy.includes(3) && howdy.includes (2) && howdy.includes(1)){
-  howdy2= howdy.replaceAll(3, "Won't you be my neighbor?") + howdy.replaceAll(2, "Beep!") + howdy.replaceAll(1, "Boop!")
-  }
+   if (howdy.includes(3)){
+  howdy2= howdy.replaceAll(3, "Won't you be my neighbor?").replaceAll(2, "Boop!").replaceAll(1, "Beep!")
   return howdy2
+}
+}
  /* if (howdy.includes(2)){
   howdy2=howdy.replaceAll(2, "Boop!")
  }
  if (howdy.includes(1)){
-  howdy2 = howdy.replaceAll(1, "Beep!")
+  howdy2 = .replaceAll(1, "Beep!")
  }
  return howdy2 */
- }
+ 
  
 
 
