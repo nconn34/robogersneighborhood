@@ -91,6 +91,28 @@ Test: "It will return the prompt when a 3 is present in any order in the array"
 Code: helloNeighbor(23)
 Expected Output: "Won't you be my neighbor?"
 
+function helloNeighbor(number){
+  const hello3 = "Won't you be my neighbor?";
+  const hello2 = "Boop!";
+  const hello1 = "Beep!";
+  let robogerNum = number.toString();
+  let roboger = "";
+  let output = []
+ for (let i = 0, length=robogerNum.length; i < length; i += 1){
+    output.push(+robogerNum.charAt(i));
+  } 
+    if (output.includes(3)){
+    roboger = hello3;
+    return roboger
+   }else if (output.includes(2)){
+    roboger = hello2;
+    return roboger
+   }else if (output.includes(1)){
+    roboger = hello1;
+    return roboger
+}
+};
+
 Describe: howdyRoboger(number)
 Test: "It will return a range of numbers from 0 to the user inputted number."
 Code: howdyRoboger(5)
