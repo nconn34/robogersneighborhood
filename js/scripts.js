@@ -8,7 +8,7 @@ function howdyRoboger(number){
     howdy = output.toString();
 }
   if (howdy.includes(3)){
-    howdy2= howdy.replaceAll(3, "Won't you be my neighbor?").replaceAll(2, "Boop!").replaceAll(1, "Beep!")
+  howdy2= howdy.replaceAll(3, "Won't you be my neighbor?").replaceAll(2, "Boop!").replaceAll(1, "Beep!")
   return howdy2
 }
 };
