@@ -4,7 +4,7 @@ function howdyRoboger(number){
   let howdy = "";
   let howdy2 = "";
   for (i=0; i<=number; i++){
-    output.push(i.toString());
+    output.push(i);
     howdy = output.toString();
 }
   if (howdy.includes(3)){
